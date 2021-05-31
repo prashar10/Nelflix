@@ -43,39 +43,100 @@
         </div>
 
     </header>
-    <!-- <footer class="footer">
-        <div class="enjoy">
-            <div><h1>Enjoy on your TV.</h1></div>
-            <div><h3>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3></div>
-            
-        </div>
-        <hr>
-        <div class="download">
-            <div><h1>Download your shows to watch offline.</h1></div>
-            <div><h3>Save your favourites easily and always have something to watch.</h3></div>
-        </div>
-        
 
-
-
-    </footer> -->
-    <!-- <div class="layer1">
-        <div style="color: white; border: 2px solid red;"><h1>Enjoy on your TV.</h1></div>
-        <div style="color:white; border: 2px solid green;"><h3>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3></div>
-        <div><img src="image/screen.png" alt=""></div>
-      </div> -->
     <div class="layer1">
-        <!-- <h2>My Skills.</h2> -->
-        <!-- <div class="layer1-row">
-          <img class="code-img" src="images/computer.png" alt="computer-image">
-          <h3>Design & development</h3>
-          <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-        </div> -->
+
         <div class="layer1-row">
             <img class="screen-img" src="image/screen.png" alt="screen-img">
             <h1>Enjoy on your TV.</h1>
             <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3>
         </div>
+        <hr>
+    </div>
+    <div class="layer2">
+
+        <div class="layer2-row">
+            <img class="download-img" src="image/download.jpg" alt="download-image">
+            <h1>Download your shows to watch offline.</h1>
+            <h3>Save your favourites easily and always have something to watch.</h3>
+        </div>
+        <hr>
+    </div>
+
+    <div class="layer3">
+
+        <div class="layer3-row">
+            <img class="tv-img" src="image/tv.png" alt="tv-img">
+            <h1>Watch everywhere.</h1>
+            <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
+        </div>
+        <hr>
+    </div>
+
+    <div class="layer4">
+
+        <div class="layer4-row">
+            <img class="kids-img" src="image/kids.png" alt="kids-image">
+            <h1>Create profiles for children.</h1>
+            <h3>Send children on adventures with their favourite characters in a space made just for them—free with your
+                membership.</h3>
+        </div>
+        <hr>
+    </div>
+    <!-- FAQ -->
+    <div class="faq">
+        <h1>Frequently Asked Questions?</h1>
+        <button class="collapsible">What is NelFlix?</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible">How much does NelFlix cost?</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible">How do I cance?</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div><button class="collapsible">What can I watch on Nelflix?</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div><button class="collapsible">Is NelFlix good for kids?</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+
+        <div class="ready"></div>
+
+    </div>
+    <hr>
+
+    <!-- javascript -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 
 
 </body>

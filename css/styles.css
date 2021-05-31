@@ -1,12 +1,13 @@
-    .main {
+.main {
         /* display: block; */
         width: 100%;
         height: 75%;
+        align-items:flex-start;
     }
 
     .main img {
-        
-        height: 750px;
+        position: relative;
+        /* height: 750px; */
         width: 100%;
         opacity: 50%;
     }
@@ -21,7 +22,7 @@
         height: 45px;
         color: red;
         font-size: 3.5em;
-        
+
     font-size: 55px;
     font-weight: bolder;
     }
@@ -40,7 +41,7 @@
         right: 70px;
         top: 25px;
         display: inline-block;
-        
+
     }
     .select{
         font-family: 'Baloo Bhai 2', cursive;
@@ -49,7 +50,7 @@
         background-color: black;
         padding: 5px 20px;
         border: 2px solid grey;
-        
+
         font-size: 20px;
         cursor: pointer;
     }
@@ -58,19 +59,19 @@
         background-color: red;
         padding: 5px 20px;
         color: white;
-        
+
         font-size: 20px;
         border: red;
         border-radius: 7px;
     }
     .start{
-    
+
     display: inline-block;
     position: absolute;
     top: 25%;
-    left: 37%;
+    left: 35%;
     width: 570px;
-    
+
     }
     .start h1,h2,h3{
         font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -91,7 +92,7 @@
    .start input{
     width: 535px;
     padding: 24px;
-    
+
    }
    .btn2{
     position: absolute;
@@ -103,8 +104,8 @@
     padding: 22px;
     font-size: 20px;
     border: red;
-    
     width: 200px;
+
     }
     .mail{
         position: absolute;
@@ -113,15 +114,16 @@
     left: -48px;
     position: absolute;
     }
-    
-    .screen-img{
+
+    .screen-img, .tv-img{
         position: relative;
         width: 39%;
         float: right;
         margin-left: 30px;
         bottom: 50px;
       }
-      .layer1-row{
+      .layer1-row, .layer3-row{
+          padding: 10px;
         font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
           color: white;
         width: 50%;
@@ -129,7 +131,7 @@
         text-align: left;
         font-size: x-large;
       }
-      .layer1-row h1,h3{
+      .layer1-row h1,h3 , .layer3-row h1,h3{
           text-align: left;
       }
       hr{
@@ -138,4 +140,79 @@
         height: 5px;
         background: grey;
         margin: -4px;
+      }
+      .download-img, .kids-img{
+        position: relative;
+        width: 39%;
+        float: left;
+        margin-left: 30px;
+        bottom: 50px;
+      }
+      .layer2-row, .layer4-row{
+        padding: 10px;
+      font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+        color: white;
+      width: 50%;
+      margin:100px auto 100px auto;
+      /* text-align: left; */
+      font-size: x-large;
+    }
+    .layer2-row h1,h3, .layer4-row h1,h3{
+        text-align: left;
+    }
+    .faq{
+        position: relative;
+        display: flexbox;
+        margin-left: 31%;
+    }
+    .faq h1{
+        font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white;
+    /* text-align: center; */
+    margin-left: 14%;
+    font-size: 266%;
+    margin-bottom: 4%;
+    }
+    .collapsible {
+        display: flexbox;
+        font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+        background-color: rgb(58 55 55);
+        color: white;
+        margin: 0.2%;
+        cursor: pointer;
+        padding: 23px;
+        width: 70%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 30px;
+      }
+
+      .active, .collapsible:hover {
+        background-color: #555;
+      }
+
+      .collapsible:after {
+        content: '\002B';
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .active:after {
+        content: "\2212";
+      }
+
+      .content {
+        font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+        width: 67.5%;
+          color: white;
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: rgb(77, 77, 77);
+        font-size: 30px;
+        margin: 0.1%;
       }
